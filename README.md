@@ -1,4 +1,4 @@
-v# 🌡️ Temperature Converter App
+# 🌡️ Temperature Converter App
 
 An Android application that allows users to convert temperatures between **Fahrenheit and Celsius**. Simple, fast, and user-friendly.
 
