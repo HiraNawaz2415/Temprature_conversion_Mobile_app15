@@ -1,0 +1,4 @@
+Android Studio
+Java SDK 8+
+Gradle 7+
+Android Gradle Plugin
