@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF9E80"
+    android:layout_marginVertical="16dp"
+    android:layout_marginHorizontal="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewfirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Temprature Conversion"
+        android:textColor="#366251"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewfirst"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp"
+        android:textColor="@color/black"
+        android:text=""
+        android:textSize="28sp" />
+
+    <EditText
+        android:id="@+id/editTextTemperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewResult"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-5dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="-1dp"
+        android:background="@drawable/roundecorner"
+        android:hint="Enter Temperature"
+        android:inputType="numberDecimal"
+        android:padding="16dp"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/spinnerConversion"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/editTextTemperature"
+        android:layout_alignParentStart="true"
+        android:backgroundTint="#366251"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="46dp"
+        android:entries="@array/conversion_types"
+        android:src="@drawable/baseline_arrow_drop_down_circle_24" />
+
+    <Button
+        android:id="@+id/buttonConvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerConversion"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="159dp"
+        android:layout_marginEnd="-4dp"
+        android:backgroundTint="#366251"
+        android:onClick="convertTemperature"
+        android:text="Convert"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>
